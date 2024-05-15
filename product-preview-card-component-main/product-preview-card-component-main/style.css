@@ -1,0 +1,118 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 14px;
+}
+
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", serif;
+*/
+
+body {
+    background-color: var(--cream);
+}
+
+.container {
+    margin: 70px auto;
+    display: flex;
+    max-width: 600px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+}
+
+.logo {
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.info {
+    background-color: var(--white);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.info .title {
+    padding: 30px 0 30px 30px;
+    letter-spacing: 3px;
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.info .sub-title {
+    padding: 0px 90px 30px 30px;
+    color: var(--very-dark-blue);
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.description {
+    padding: 0 60px 30px 30px;
+    color: var(--dark-grayish-blue);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.prices {
+    display: flex;
+}
+
+.new-price {
+    color: var(--dark-cyan);
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    padding: 0 20px 30px 30px;
+}
+
+.old-price {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.btn span {
+    margin-right: 7px;
+}
+
+.btn {
+    text-align: center;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    width: 77%;
+    margin: 0px auto 30px;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.btn:hover {
+   background-color: var(--very-dark-blue);
+}
+
